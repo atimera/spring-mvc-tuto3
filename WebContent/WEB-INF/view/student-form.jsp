@@ -16,13 +16,7 @@
 		<br><br>
 		Country: 
 		<form:select path="country">
-			<form:option value="USA" label="United State" />
-			<form:option value="France" label="France" />
-			<form:option value="Brazil" label="Brazil" />
-			<form:option value="Spain" label="Spain" />
-			<form:option value="Germany" label="Germany" />
-			<form:option value="India" label="India" />
-			<form:option value="Senegal" label="Sénégal" />
+			<form:options items="${student.countryOptions}" />
 		</form:select>
 		<br><br>
 		

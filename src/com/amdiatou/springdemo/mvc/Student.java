@@ -1,12 +1,26 @@
 package com.amdiatou.springdemo.mvc;
 
+import java.util.LinkedHashMap;
+
 public class Student {
 	
 	private String firstName;
 	private String lastName;
 	private String country;
+	private LinkedHashMap<String, String> countryOptions; // <ISO code, Value>
 	
 	public Student() {
+		
+		// populate country options: used ISO country code
+		countryOptions = new LinkedHashMap<>();
+		countryOptions.put("FR", "France");
+		countryOptions.put("BR", "Brazil");
+		countryOptions.put("ES", "Spain");
+		countryOptions.put("DE", "Germany");
+		countryOptions.put("IN", "India");
+		countryOptions.put("SN", "Sénégal");
+		countryOptions.put("US", "United State of America");
+		
 	}
 
 	public String getFirstName() {
@@ -32,6 +46,12 @@ public class Student {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+
+	public LinkedHashMap<String, String> getCountryOptions() {
+		return countryOptions;
+	}
+	
+	
 	
 	
 }
