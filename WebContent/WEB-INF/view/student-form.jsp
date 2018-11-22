@@ -24,6 +24,10 @@
 		<br><br>
 		
 		<br><br>
+		Favorite Language: 
+		<form:radiobuttons path="favoriteLanguage" items="${student.languages}" delimiter=" || "/>
+		
+<%-- 		
 		<form:radiobutton path="favoriteLanguage" value="Java" label="Java" />
 		<form:radiobutton path="favoriteLanguage" value="C#" label="C#" />
 		<form:radiobutton path="favoriteLanguage" value="PHP" label="PHP" />
@@ -31,7 +35,8 @@
 		<form:radiobutton path="favoriteLanguage" value="C" label="C" />
 		<form:radiobutton path="favoriteLanguage" value="C++" label="C++" />
 		<form:radiobutton path="favoriteLanguage" value="Ruby" label="Ruby" />
-		
+ --%>		
+ 
 		<br><br>
 		<input type="submit" value="Submit" />
 		

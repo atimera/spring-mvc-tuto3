@@ -1,6 +1,8 @@
 package com.amdiatou.springdemo.mvc;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 
 public class Student {
 	
@@ -9,6 +11,7 @@ public class Student {
 	private String country;
 	private String favoriteLanguage;
 	private LinkedHashMap<String, String> countryOptions; // <ISO code, Value>
+	private List<String> languages;
 	
 	public Student() {
 		
@@ -21,6 +24,16 @@ public class Student {
 		countryOptions.put("IN", "India");
 		countryOptions.put("SN", "Sénégal");
 		countryOptions.put("US", "United State of America");
+		
+		// languages possible for favorite language
+		languages = new ArrayList<>();
+		languages.add("Java");
+		languages.add("PHP");
+		languages.add("C#");
+		languages.add("Python");
+		languages.add("C++");
+		languages.add("Ruby");
+		
 		
 	}
 
@@ -58,6 +71,10 @@ public class Student {
 
 	public void setFavoriteLanguage(String favoriteLanguage) {
 		this.favoriteLanguage = favoriteLanguage;
+	}
+
+	public List<String> getLanguages() {
+		return languages;
 	}
 	
 	
