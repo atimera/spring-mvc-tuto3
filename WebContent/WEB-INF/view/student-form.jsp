@@ -16,14 +16,23 @@
 		<br><br>
 		Country: 
 		<form:select path="country">
-			<%-- <form:options items="${student.countryOptions}" /> --%>
+			<form:options items="${student.countryOptions}" />
 			
 			<!-- theCountryOptions is populate form a properties file -->
-			<form:options items="${theCountryOptions}" />
-			
+			<%-- <form:options items="${theCountryOptions}" /> --%>
 		</form:select>
 		<br><br>
 		
+		<br><br>
+		<form:radiobutton path="favoriteLanguage" value="Java" label="Java" />
+		<form:radiobutton path="favoriteLanguage" value="C#" label="C#" />
+		<form:radiobutton path="favoriteLanguage" value="PHP" label="PHP" />
+		<form:radiobutton path="favoriteLanguage" value="Python" label="Python" />
+		<form:radiobutton path="favoriteLanguage" value="C" label="C" />
+		<form:radiobutton path="favoriteLanguage" value="C++" label="C++" />
+		<form:radiobutton path="favoriteLanguage" value="Ruby" label="Ruby" />
+		
+		<br><br>
 		<input type="submit" value="Submit" />
 		
 	</form:form>

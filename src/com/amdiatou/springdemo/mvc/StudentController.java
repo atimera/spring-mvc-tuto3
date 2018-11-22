@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/student")
 public class StudentController {
 
-	@Value("#{countryOptions}") // 
-	private Map<String, String> countryOptions;
+	// @Value("#{countryOptions}")  
+	// private Map<String, String> countryOptions;
 	
 	@RequestMapping("/showForm")
 	public String showForm(Model pModel) {
@@ -24,8 +24,8 @@ public class StudentController {
 		// add student to the model
 		pModel.addAttribute("student", vStudent);
 		
-		//// add the country options to the model 
-	    pModel.addAttribute("theCountryOptions", countryOptions); 
+		// add the country options to the model 
+	    // pModel.addAttribute("theCountryOptions", countryOptions); 
 	    
 		return "student-form";
 	}
@@ -36,8 +36,8 @@ public class StudentController {
 		// log the input data
 		System.out.println("First Name: " + pStudent.getFirstName());
 		System.out.println("Last Name: " + pStudent.getLastName());
-		
 		System.out.println("Country: " + pStudent.getCountry());
+		System.out.println("Favorite Language: " + pStudent.getFavoriteLanguage());
 		
 		return "student-confirmation";
 	}
