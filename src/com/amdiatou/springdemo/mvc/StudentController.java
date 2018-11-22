@@ -39,6 +39,8 @@ public class StudentController {
 		System.out.println("Country: " + pStudent.getCountry());
 		System.out.println("Favorite Language: " + pStudent.getFavoriteLanguage());
 		
+		System.out.println("Operating Systems: ");
+		pStudent.getOperatingSystems().stream().forEach(System.out::println);
 		return "student-confirmation";
 	}
 }

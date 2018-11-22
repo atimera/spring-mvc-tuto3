@@ -10,6 +10,7 @@ public class Student {
 	private String lastName;
 	private String country;
 	private String favoriteLanguage;
+	private List<String> operatingSystems;
 	private LinkedHashMap<String, String> countryOptions; // <ISO code, Value>
 	private List<String> languages;
 	
@@ -75,6 +76,14 @@ public class Student {
 
 	public List<String> getLanguages() {
 		return languages;
+	}
+
+	public List<String> getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(List<String> operatingSystems) {
+		this.operatingSystems = operatingSystems;
 	}
 	
 	

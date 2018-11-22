@@ -22,22 +22,18 @@
 			<%-- <form:options items="${theCountryOptions}" /> --%>
 		</form:select>
 		<br><br>
-		
-		<br><br>
+
 		Favorite Language: 
-		<form:radiobuttons path="favoriteLanguage" items="${student.languages}" delimiter=" || "/>
-		
-<%-- 		
-		<form:radiobutton path="favoriteLanguage" value="Java" label="Java" />
-		<form:radiobutton path="favoriteLanguage" value="C#" label="C#" />
-		<form:radiobutton path="favoriteLanguage" value="PHP" label="PHP" />
-		<form:radiobutton path="favoriteLanguage" value="Python" label="Python" />
-		<form:radiobutton path="favoriteLanguage" value="C" label="C" />
-		<form:radiobutton path="favoriteLanguage" value="C++" label="C++" />
-		<form:radiobutton path="favoriteLanguage" value="Ruby" label="Ruby" />
- --%>		
- 
+		<form:radiobuttons path="favoriteLanguage" items="${student.languages}" delimiter=" "/>	
 		<br><br>
+		
+		Operating System:
+		<form:checkbox label="Linux" path="operatingSystems" value="Linux" />
+		<form:checkbox label="MS Windows" path="operatingSystems" value="MS Windows" />
+		<form:checkbox label="Mac OS" path="operatingSystems" value="Mac OS" />
+		<form:checkbox label="Android" path="operatingSystems" value="Android" />
+		<br><br>
+		
 		<input type="submit" value="Submit" />
 		
 	</form:form>
