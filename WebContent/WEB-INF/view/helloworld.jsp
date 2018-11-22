@@ -7,6 +7,9 @@
 </head>
 <body>
 	Hello World of Spring 
-	<p>Student Name : ${param.studentName} </p>
+	<br><br>
+	Student Name : ${param.studentName} 
+	<br><br>
+	Message : ${message} 
 </body>
 </html>
