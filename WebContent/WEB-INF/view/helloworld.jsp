@@ -10,6 +10,9 @@
 	<br><br>
 	Student Name : ${param.studentName} 
 	<br><br>
-	Message : ${message} 
+	Message : ${message}
+	
+	<hr>
+	<a href="/">Go home</a> 
 </body>
 </html>
