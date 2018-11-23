@@ -30,6 +30,12 @@
 		<form:errors path="freePasses" cssClass="error"/>
 		<br><br>
 		
+		<label for="postalCode">Postal Code:</label> 
+		<form:input path="postalCode" id="postalCode"/>
+		<form:errors path="postalCode" cssClass="error"/>
+		<br><br>
+		
+		
 		<input type="submit" value="Submit" />
 		
 	</form:form>
