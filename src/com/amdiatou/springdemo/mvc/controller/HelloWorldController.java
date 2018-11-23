@@ -1,4 +1,4 @@
-package com.amdiatou.springdemo.mvc;
+package com.amdiatou.springdemo.mvc.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

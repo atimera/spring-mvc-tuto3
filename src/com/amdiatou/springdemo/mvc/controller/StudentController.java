@@ -1,12 +1,13 @@
-package com.amdiatou.springdemo.mvc;
+package com.amdiatou.springdemo.mvc.controller;
 
-import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Value;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.amdiatou.springdemo.mvc.Student;
 
 @Controller
 @RequestMapping("/student")
@@ -27,7 +28,7 @@ public class StudentController {
 		// add the country options to the model 
 	    // pModel.addAttribute("theCountryOptions", countryOptions); 
 	    
-		return "student-form";
+		return "student/student-form";
 	}
 	
 	@RequestMapping("/processForm")
@@ -41,6 +42,6 @@ public class StudentController {
 		
 		System.out.println("Operating Systems: ");
 		pStudent.getOperatingSystems().stream().forEach(System.out::println);
-		return "student-confirmation";
+		return "student/student-confirmation";
 	}
 }
